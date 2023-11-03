@@ -51,22 +51,25 @@ return fullName;
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 
-/*  let generateSentence = (person, beverage, location) => person + ` was drinking ` + beverage + ` at ` + location
+// let generateSentence = (person, beverage, location) => person + ` was drinking ` + beverage + ` at ` + location
 
 function generateSentence(person, beverage, location) {
-  per = person;
-  bev = beverage;
-  loc = location;
-  generate = per + ` was drinking ` +  bev + ` at ` + loc;
-  return generate;
+  // per = person;
+  // bev = beverage;
+  // loc = location;
+  // generate = per + ` was drinking ` +  bev + ` at ` + loc;
+  // return generate;
 
-  generateSentence = person + ` was drinking ` + beverage + ` at ` + location`.`;
-  return generateSentence(`Kay`, `coffee`, `the local cafe`);
+  // generateSentence = person + ` was drinking ` + beverage + ` at ` + location`.`;
+  // return generateSentence;
 
-  gen = person + ` was drinking ` + beverage + ` at ` + location;
-  generateSentence = gen;
+  generateSentence = person + ` was drinking ` + beverage + ` at ` + location + `.`;
+   
   return generateSentence;
-}  */
+
+  // generateSentence = `${person} was drinking ${beverage} at ${location}.`
+  // return generateSentence
+}  
 
 
 // Return the given string with all vowels replced with '*' characters.
@@ -75,15 +78,16 @@ function generateSentence(person, beverage, location) {
 //   => 'j*v*scr*pt'
 function censorVowels(string) {
   let x = 0;
-  while(x != censorVowels.length){
+  while(x < censorVowels.length()){//was () the fix
     if(censorVowels === `a` || `e` || `i` || `o` || `u` || `y`){
       censorVowels[x] = `*`;
+      x++;
     }
     else{
       x++;
     }
   }
-  return censorVowels;
+  return censorVowels();
 }
 
 // Return the given string in sticky case.
@@ -109,26 +113,26 @@ function stickyCase(string) {
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
-  while(x != leetspeak.length)
-    if(leetspeak[`a`]){
-    leetspeak[x] = 4;
-  }
-  else if(leetspeak[`e`]){
-    leetspeak[x] = 3;
-  }
-  else if(leetspeak[`i`]){
-    leetspeak[x] = 1;
-  }
-  else if(leetspeak[`o`]){
-    leetspeak[x] = 0;
-  }
-  else if(leetspeak[`s`]){
-    leetspeak[x] = 5;
-  }
-  else if(leetspeak[`t`]){
-    leetspeak[x] = 7;
+  // while(x != leetspeak.length)
+  //   if(leetspeak[`a`]){
+  //   leetspeak[x] = 4;
+  // }
+  // else if(leetspeak[`e`]){
+  //   leetspeak[x] = 3;
+  // }
+  // else if(leetspeak[`i`]){
+  //   leetspeak[x] = 1;
+  // }
+  // else if(leetspeak[`o`]){
+  //   leetspeak[x] = 0;
+  // }
+  // else if(leetspeak[`s`]){
+  //   leetspeak[x] = 5;
+  // }
+  // else if(leetspeak[`t`]){
+  //   leetspeak[x] = 7;
 
-  }
+  // }
 }
 
 export {

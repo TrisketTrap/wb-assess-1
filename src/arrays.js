@@ -3,7 +3,7 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  // greaterThanTen = [11, 12, 13];
+  greaterThanTen = [11, 12, 13];
  
 
 }
