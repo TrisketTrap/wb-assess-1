@@ -50,33 +50,51 @@ return fullName;
 // Ex.:
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
+
+/*  let generateSentence = (person, beverage, location) => person + ` was drinking ` + beverage + ` at ` + location
+
 function generateSentence(person, beverage, location) {
-  /*per = person;
+  per = person;
   bev = beverage;
   loc = location;
   generate = per + ` was drinking ` +  bev + ` at ` + loc;
-  return generate;*/
+  return generate;
 
   generateSentence = person + ` was drinking ` + beverage + ` at ` + location`.`;
   return generateSentence(`Kay`, `coffee`, `the local cafe`);
 
-  /*gen = person + ` was drinking ` + beverage + ` at ` + location;
+  gen = person + ` was drinking ` + beverage + ` at ` + location;
   generateSentence = gen;
-  return generateSentence;*/
+  return generateSentence;
+}  */
 
-}
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
-function censorVowels(string) {}
+function censorVowels(string) {
+  let x = 0;
+  while(x != censorVowels.length){
+    if(censorVowels === `a` || `e` || `i` || `o` || `u` || `y`){
+      censorVowels[x] = `*`;
+    }
+    else{
+      x++;
+    }
+  }
+  return censorVowels;
+}
 
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+
+}
+ 
+
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -90,7 +108,28 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+  while(x != leetspeak.length)
+    if(leetspeak[`a`]){
+    leetspeak[x] = 4;
+  }
+  else if(leetspeak[`e`]){
+    leetspeak[x] = 3;
+  }
+  else if(leetspeak[`i`]){
+    leetspeak[x] = 1;
+  }
+  else if(leetspeak[`o`]){
+    leetspeak[x] = 0;
+  }
+  else if(leetspeak[`s`]){
+    leetspeak[x] = 5;
+  }
+  else if(leetspeak[`t`]){
+    leetspeak[x] = 7;
+
+  }
+}
 
 export {
   approximatelyEqual,
