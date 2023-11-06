@@ -63,7 +63,7 @@ function generateSentence(person, beverage, location) {
   // generateSentence = person + ` was drinking ` + beverage + ` at ` + location`.`;
   // return generateSentence;
 
-  generateSentence = person + ` was drinking ` + beverage + ` at ` + location + `.`;
+  generateSentence = person + ` was drinking ` + beverage + ` at ` + location +  `.`;
    
   return generateSentence;
 
@@ -74,18 +74,40 @@ function generateSentence(person, beverage, location) {
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
-//   censorVowels('javascript');
+//   censorVowels('javascript');  
 //   => 'j*v*scr*pt'
 function censorVowels(string) {
   let x = 0;
   while(x < censorVowels.length()){//was () the fix
-    if(censorVowels === `a` || `e` || `i` || `o` || `u` || `y`){
+    if(censorVowels[x] === `a`){
+      censorVowels[x] = `*`;
+      x++;
+    }
+    else if(censorVowels[x] === `e`){
+      censorVowels[x] = `*`;
+      x++;
+    }
+    else if(censorVowels[x] === `i`){
+      censorVowels[x] = `*`;
+      x++;
+    }
+    else if(censorVowels[x] === `o`){
+      censorVowels[x] = `*`;
+      x++;
+    }
+    else if(censorVowels[x] === `u`){
+      censorVowels[x] = `*`;
+      x++;
+    }
+    else if(censorVowels[x] === `y`){
       censorVowels[x] = `*`;
       x++;
     }
     else{
       x++;
+      return;
     }
+
   }
   return censorVowels();
 }

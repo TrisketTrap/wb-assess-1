@@ -40,6 +40,21 @@ function divisibleByEither(a, b, c) {
 //   => '4s2b'
 //   compressString('ssssbbba');
 //   => '4s3ba'
-function compressString(string) {}
+function compressString(string) { /*loops through and holds the first value of i in x then i keeps looping and checking if it == x. 
+if i == x then add one to the counter(y). when the loop goes through each letter in commonStrings reset counters and update x to the new I lette value*/
+    z = 0;//will ++ when i === the held value of x
+    let x = i;//holds the letter value of i
+    for (const i of commonStrings) { //each loop i goes through commonStrings
+        i++;
+        if(i != x){
+
+        }
+        
+    }   
+    
+
+
+
+}
 
 export { commonStrings, compressString, divisibleByEither };
